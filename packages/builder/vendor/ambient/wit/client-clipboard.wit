@@ -1,0 +1,4 @@
+interface client-clipboard {
+    get: func()
+    set: func(text: string)
+}

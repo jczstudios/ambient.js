@@ -1,0 +1,10 @@
+{
+    "name": "ambient.js",
+    "version": "0.0.0",
+    "scripts": {},
+    "private": false,
+    "license": "MIT",
+    "workspaces": [
+        "packages/*"
+    ]
+}
