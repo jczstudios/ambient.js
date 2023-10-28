@@ -1,0 +1,6 @@
+[package]
+id = "q2djplfzyl6byoaqxwnblt4kiju7udeo"
+name = "ambient"
+version = "0.0.1"
+content = { type = "Playable" }
+ambient_version = "0.3.0"

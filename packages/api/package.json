@@ -1,0 +1,22 @@
+{
+  "name": "@ambient.js/api",
+  "version": "1.0.0",
+  "description": "This Typescript library allows you to access Ambient's API through your own JS code.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "Julian Pryce",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^7.2.0"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  }
+}

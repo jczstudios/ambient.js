@@ -63,11 +63,12 @@ export default class Builder {
             return;
         }
         
-        // const witPath = await readFile(new URL('../vendor/ambient/wit/ambient-package.wit', import.meta.url).pathname, 'utf8');
+        const witPath = await readFile(new URL('../vendor/ambient/wit/root.wit', import.meta.url).pathname, 'utf8');
         
         const adapterPath = new URL('../vendor/ambient/wasi_snapshot_preview1.command.wasm', import.meta.url);
         
         const { component } = await componentize(jsSource, {
+            // witWorld: witPath,
             witPath: new URL('../vendor/ambient/wit/', import.meta.url).pathname,
             worldName: "root",
             enableStdout: true,

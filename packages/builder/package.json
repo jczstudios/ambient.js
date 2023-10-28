@@ -12,7 +12,8 @@
   "license": "MIT",
   "dependencies": {
     "@bytecodealliance/componentize-js": "^0.3.0",
-    "yargs": "^17.7.2"
+    "yargs": "^17.7.2",
+    "@bytecodealliance/preview2-shim": "^0.0.16"
   },
   "devDependencies": {
     "@types/jest": "^29.5.5",

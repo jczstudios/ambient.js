@@ -1,0 +1,13 @@
+{
+  "name": "runtime",
+  "version": "1.0.0",
+  "description": "Runtime is the WASM layer that runs your JS code and glues/binds it to Ambient's API.",
+  "main": "index.js",
+  "scripts": {
+    "build": "cargo build --target wasm32-wasi --release --features server",
+    "postbuild": "wasm-tools component new target/wasm32-wasi/release/ambient_server.wasm -o build/server/ambient_server.wasm --adapt wasi_snapshot_preview1.command.wasm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,28 @@
+package root:component
+
+world root {
+  import ambient:bindings/types
+  import ambient:bindings/client-mesh
+  import ambient:bindings/client-texture
+  import ambient:bindings/client-sampler
+  import ambient:bindings/client-material
+  import ambient:bindings/component
+  import ambient:bindings/entity
+//   import wasi:io/streams
+//   import wasi:filesystem/types
+//   import wasi:filesystem/preopens
+//   import wasi:random/random
+//   import wasi:cli/environment
+//   import wasi:cli/exit
+//   import wasi:cli/stdin
+//   import wasi:cli/stdout
+//   import wasi:cli/stderr
+//   import wasi:cli/terminal-input
+//   import wasi:cli/terminal-output
+//   import wasi:cli/terminal-stdin
+//   import wasi:cli/terminal-stdout
+//   import wasi:cli/terminal-stderr
+
+  export ambient:bindings/guest
+//   export wasi:cli/run
+}

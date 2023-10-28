@@ -1,0 +1,27 @@
+[package]
+name = "runtime"
+description = "Runtime is the WASM layer that runs your JS code and glues/binds it to Ambient's API."
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ambient_api = { git = "https://github.com/AmbientRun/Ambient.git", tag = "v0.3.0" }
+javy = "2.1.0"
+anyhow = "1.0.75"
+slotmap = "1.0"
+
+[build-dependencies]
+javy = "2.1.0"
+
+[[bin]]
+name = "ambient_server"
+path = "src/server.rs"
+required-features = ["server"]
+
+[features]
+server = ["ambient_api/server"]
+client = ["ambient_api/client"]
+
+

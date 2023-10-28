@@ -5,7 +5,7 @@ describe("Builder Tests", () => {
     it("can build a JS file into an Ambient WASM component", async () => {
         const builder = new Builder({
             js: new URL("../utils/mock-component.js", import.meta.url).pathname,
-            out: "../test_data/out.wasm"
+            out: new URL("../test_data/out.wasm", import.meta.url).pathname
         });
 
         await expect(builder.build()).resolves.not.toThrow();
